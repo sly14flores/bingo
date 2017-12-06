@@ -18,6 +18,11 @@
 
   </head>
  <style>
+ button{
+    background-color: blue;
+    height:100px;
+    width:150px;
+}
 	table {
 		border-collapse: collapse;
 		height: 550px;
@@ -40,29 +45,27 @@
 		border-top: 1px solid #000000;
 	}
 </style>
-  <body>
-
-    <!-- Navigation -->
- 
+  <body ng-app="">
 
     <!-- Page Content -->
     <section>
       <div style="margin-left: 10px; margin-top: 20px; font-size: 25px;">
         <div class="row">
+		<button>Press</button>
           <div class="col-lg-8">
             <table class="table">
 			<thead>
 			  <tr>
-				<th style="text-align:center;" colspan="3">B</th>
-				<th style="text-align:center;" colspan="3">I</th>
-				<th style="text-align:center;" colspan="3">N</th>
-				<th style="text-align:center;" colspan="3">G</th>
-				<th style="text-align:center;" colspan="3">O</th>
+				<th style="text-align:center; background-color: #00bf41;" colspan="3">B</th>
+				<th style="text-align:center; background-color: #00bf41;" colspan="3">I</th>
+				<th style="text-align:center; background-color: #00bf41;" colspan="3">N</th>
+				<th style="text-align:center; background-color: #00bf41;" colspan="3">G</th>
+				<th style="text-align:center; background-color: #00bf41;" colspan="3">O</th>
 			  </tr>
 			</thead>
 			<tbody>
 			  <tr>
-				<td>1</td>	<!-- Letter B -->
+				<td style="text-align:center; background-color: #f0595a;">1</td>	<!-- Letter B -->
 				<td>6</td>
 				<td>11</td>
 				<td>16</td> <!-- Letter I -->
@@ -76,7 +79,7 @@
 				<td>56</td>
 				<td>61</td> <!-- Letter O -->
 				<td>66</td>
-				<td>71</td>
+				<td style="text-align:center; background-color: #f0595a;">71</td>
 			  </tr>
 			   <tr>
 				<td>2</td>	<!-- Letter B -->
@@ -105,7 +108,7 @@
 				<td>33</td> <!-- Letter N -->
 				<td>38</td>
 				<td>43</td>
-				<td>48</td> <!-- Letter G -->
+				<td style="text-align:center; background-color: #f0595a;">48</td> <!-- Letter G -->
 				<td>53</td>
 				<td>58</td>
 				<td>63</td> <!-- Letter O -->
@@ -157,7 +160,21 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
+	<script src="angularjs/angular.min.js"></script>
+ <script type="text/javascript">
+    clicked = true;
+    $(document).ready(function(){
+        $("button").click(function(){
+    if(clicked){
+        $(this).css('background-color', 'red');
+        clicked  = false;
+    } else {
+        $(this).css('background-color', 'blue');
+        clicked  = true;
+    }   
+});
+    });
+    </script>
   </body>
 
 </html>
