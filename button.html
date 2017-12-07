@@ -11,28 +11,41 @@
     <title>E-Bingo</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/the-big-picture.css" rel="stylesheet">
 
   </head>
  <style>
+.line{
+background: repeating-linear-gradient(
+  45deg,
+  #ff9999,
+  #ff9999 10px,
+  #fff 10px,
+  #fff 20px
+)
+ }
  .btn-group-lg>.btn, .btn-lg {
     font-size: 1.75rem;
 	
 }
   button{
     background-color:#fff;
+	color:gray;
 }
 	table {
 		border-collapse: collapse;
 		height: 550px;
 	}
 
-	table, th, td, thead {
-		border: 1px solid black;
-		font-size:35px;
+	table,  td, thead {
+		border: 1px solid #b1a6a6;
+		font-size:40px;
+	}
+	th{
+	border: 3px solid #fff;
 	}
 	tr {
 		border: 1px solid black;
@@ -59,104 +72,103 @@
             <table class="table">
 			<thead>
 			  <tr>
-				<th style="text-align:center; background-color: #2fb758;" colspan="3">B</th>
-				<th style="text-align:center; background-color: #2fb758" colspan="3">I</th>
-				<th style="text-align:center; background-color: #2fb758" colspan="3">N</th>
-				<th style="text-align:center; background-color: #2fb758" colspan="3">G</th>
-				<th style="text-align:center; background-color: #2fb758" colspan="3">O</th>
+				<th style="text-align:center; background-color: #2fb758;" class="line" colspan="3" >B</th>
+				<th style="text-align:center; background-color: #2fb758" class="line" colspan="3">I</th>
+				<th style="text-align:center; background-color: #2fb758" class="line" colspan="3">N</th>
+				<th style="text-align:center; background-color: #2fb758" class="line" colspan="3">G</th>
+				<th style="text-align:center; background-color: #2fb758" class="line" colspan="3">O</th>
 			  </tr>
 			</thead>
 			<tbody>
 			  <tr>
-				<td><button class="btn btn-lg">1</button></td>	<!-- Letter B -->
+				<td style="border-left: 2px solid #171717"><button class="btn btn-lg">1</button></td>	<!-- Letter B -->
 				<td><button class="btn btn-lg">6</button></td>
 				<td><button class="btn btn-lg">11</button></td>
-				<td><button class="btn btn-lg">16</button></td> <!-- Letter I -->
+				<td style="border-left: 2px solid #171717"><button class="btn btn-lg">16</button></td> <!-- Letter I -->
 				<td><button class="btn btn-lg">21</button></td>
 				<td><button class="btn btn-lg">26</button></td>
-				<td><button class="btn btn-lg">31</button></td> <!-- Letter N -->
+				<td style="border-left: 2px solid #171717"><button class="btn btn-lg">31</button></td> <!-- Letter N -->
 				<td><button class="btn btn-lg">36</button></td>
 				<td><button class="btn btn-lg">41</button></td>
-				<td><button class="btn btn-lg">46</button></td> <!-- Letter G -->
+				<td style="border-left: 2px solid #171717"><button class="btn btn-lg">46</button></td> <!-- Letter G -->
 				<td><button class="btn  btn-lg">51</button></td>
 				<td><button class="btn  btn-lg">56</button></td>
-				<td><button class="btn  btn-lg">61</button></td> <!-- Letter O -->
+				<td style="border-left: 2px solid #171717"><button class="btn  btn-lg">61</button></td> <!-- Letter O -->
 				<td><button class="btn  btn-lg">66</button></td>
-				<td><button class="btn  btn-lg">71</button></td>
+				<td style="border-right: 2px solid #171717"><button class="btn  btn-lg">71</button></td>
 			  </tr>
 			   <tr>
-				<td><button class="btn  btn-lg">2</button></td>	<!-- Letter B -->
+				<td style="border-left: 2px solid #171717"><button class="btn  btn-lg">2</button></td>	<!-- Letter B -->
 				<td><button class="btn  btn-lg">7</button></td>
 				<td><button class="btn  btn-lg">12</button></td>
-				<td><button class="btn  btn-lg">17</button></td> <!-- Letter I -->
+				<td style="border-left: 2px solid #171717"><button class="btn  btn-lg">17</button></td> <!-- Letter I -->
 				<td><button class="btn  btn-lg">22</button></td>
 				<td><button class="btn  btn-lg">27</button></td>
-				<td><button class="btn  btn-lg">32</button></td> <!-- Letter N -->
+				<td style="border-left: 2px solid #171717"><button class="btn  btn-lg">32</button></td> <!-- Letter N -->
 				<td><button class="btn  btn-lg">37</button></td>
 				<td><button class="btn  btn-lg">42</button></td>
-				<td><button class="btn  btn-lg">47</button></td> <!-- Letter G -->
+				<td style="border-left: 2px solid #171717"><button class="btn  btn-lg">47</button></td> <!-- Letter G -->
 				<td><button class="btn  btn-lg">52</button></td>
 				<td><button class="btn  btn-lg">57</button></td>
-				<td><button class="btn  btn-lg">62</button></td> <!-- Letter O -->
+				<td style="border-left: 2px solid #171717"><button class="btn  btn-lg">62</button></td> <!-- Letter O -->
 				<td><button class="btn  btn-lg">67</button></td>
-				<td><button class="btn  btn-lg">72</button></td>
+				<td style="border-right: 2px solid #171717"><button class="btn  btn-lg">72</button></td>
 			  </tr>
 			   <tr>
-				<td><button class="btn  btn-lg">3</button></td>	<!-- Letter B -->
+				<td style="border-left: 2px solid #171717"><button class="btn  btn-lg">3</button></td>	<!-- Letter B -->
 				<td><button class="btn  btn-lg">8</button></td>
 				<td><button class="btn  btn-lg">13</button></td>
-				<td><button class="btn  btn-lg">18</button></td>	<!-- Letter I -->
+				<td style="border-left: 2px solid #171717"><button class="btn  btn-lg">18</button></td>	<!-- Letter I -->
 				<td><button class="btn  btn-lg">23</button></td>
 				<td><button class="btn  btn-lg">28</button></td>
-				<td><button class="btn  btn-lg">33</button></td> <!-- Letter N -->
+				<td style="border-left: 2px solid #171717"><button class="btn  btn-lg">33</button></td> <!-- Letter N -->
 				<td><button class="btn  btn-lg">38</button></td>
 				<td><button class="btn  btn-lg">43</button></td>
-				<td><button class="btn  btn-lg">48</button></td> <!-- Letter G -->
+				<td style="border-left: 2px solid #171717"><button class="btn  btn-lg">48</button></td> <!-- Letter G -->
 				<td><button class="btn  btn-lg">53</button></td>
 				<td><button class="btn  btn-lg">58</button></td>
-				<td><button class="btn  btn-lg">63</button></td> <!-- Letter O -->
+				<td style="border-left: 2px solid #171717"><button class="btn  btn-lg">63</button></td> <!-- Letter O -->
 				<td><button class="btn  btn-lg">68</button></td>
-				<td><button class="btn  btn-lg">73</button></td>
+				<td style="border-right: 2px solid #171717"><button class="btn  btn-lg">73</button></td>
 			  </tr>
 			   <tr>
-				<td><button class="btn  btn-lg">4</button></td>	<!-- Letter B -->
+				<td style="border-left: 2px solid #171717"><button class="btn  btn-lg">4</button></td>	<!-- Letter B -->
 				<td><button class="btn  btn-lg">9</button></td>
 				<td><button class="btn  btn-lg">14</button></td>
-				<td><button class="btn  btn-lg">19</button></td>	<!-- Letter I -->
+				<td style="border-left: 2px solid #171717"><button class="btn  btn-lg">19</button></td>	<!-- Letter I -->
 				<td><button class="btn  btn-lg">24</button></td>
 				<td><button class="btn  btn-lg">29</button></td>
-				<td><button class="btn  btn-lg">34</button></td> <!-- Letter N -->
+				<td style="border-left: 2px solid #171717"><button class="btn  btn-lg">34</button></td> <!-- Letter N -->
 				<td><button class="btn  btn-lg">39</button></td>
 				<td><button class="btn  btn-lg">44</button></td>
-				<td><button class="btn  btn-lg">49</button></td> <!-- Letter G -->
+				<td style="border-left: 2px solid #171717"><button class="btn  btn-lg">49</button></td> <!-- Letter G -->
 				<td><button class="btn  btn-lg">54</button></td>
 				<td><button class="btn  btn-lg">59</button></td>
-				<td><button class="btn  btn-lg">64</button></td> <!-- Letter O -->
+				<td style="border-left: 2px solid #171717"><button class="btn  btn-lg">64</button></td> <!-- Letter O -->
 				<td><button class="btn  btn-lg">69</button></td>
-				<td><button class="btn  btn-lg">74</button></td>
+				<td style="border-right: 2px solid #171717"><button class="btn  btn-lg">74</button></td>
 			  </tr>
 			  <tr>
-				<td><button class="btn  btn-lg">5</button></td>	<!-- Letter B -->
-				<td><button class="btn  btn-lg">10</button></td>
-				<td><button class="btn  btn-lg">15</button></td>
-				<td><button class="btn  btn-lg">20</button></td>	<!-- Letter I -->
-				<td><button class="btn  btn-lg">25</button></td>
-				<td><button class="btn  btn-lg">30</button></td>
-				<td><button class="btn  btn-lg">35</button></td> <!-- Letter N -->
-				<td><button class="btn  btn-lg">40</button></td>
-				<td><button class="btn  btn-lg">45</button></td>
-				<td><button class="btn  btn-lg">50</button></td> <!-- Letter G -->
-				<td><button class="btn  btn-lg">55</button></td>
-				<td><button class="btn  btn-lg">60</button></td>
-				<td><button class="btn  btn-lg">65</button></td> <!-- Letter O -->
-				<td><button class="btn  btn-lg">70</button></td>
-				<td><button class="btn  btn-lg">75</button></td>
+				<td style="border-left: 2px solid #171717; border-bottom: 2px solid #171717"><button class="btn  btn-lg">5</button></td>	<!-- Letter B -->
+				<td style="border-bottom: 2px solid #171717"><button class="btn  btn-lg">10</button></td>
+				<td style="border-bottom: 2px solid #171717"><button class="btn  btn-lg">15</button></td>
+				<td style="border-left: 2px solid #171717; border-bottom: 2px solid #171717"><button class="btn  btn-lg">20</button></td>	<!-- Letter I -->
+				<td style="border-bottom: 2px solid #171717"><button class="btn  btn-lg">25</button></td>
+				<td style="border-bottom: 2px solid #171717"><button class="btn  btn-lg">30</button></td>
+				<td style="border-bottom: 2px solid #171717; border-left: 2px solid #171717"><button class="btn  btn-lg">35</button></td> <!-- Letter N -->
+				<td style="border-bottom: 2px solid #171717"><button class="btn  btn-lg">40</button></td>
+				<td style="border-bottom: 2px solid #171717"><button class="btn  btn-lg">45</button></td>
+				<td style="border-bottom: 2px solid #171717; border-left: 2px solid #171717"><button class="btn  btn-lg">50</button></td> <!-- Letter G -->
+				<td style="border-bottom: 2px solid #171717"><button class="btn  btn-lg">55</button></td>
+				<td style="border-bottom: 2px solid #171717"><button class="btn  btn-lg">60</button></td>
+				<td style="border-bottom: 2px solid #171717; border-left: 2px solid #171717""><button class="btn  btn-lg">65</button></td> <!-- Letter O -->
+				<td style="border-bottom: 2px solid #171717"><button class="btn  btn-lg">70</button></td>
+				<td style="border-bottom: 2px solid #171717; border-right: 2px solid #171717"><button class="btn  btn-lg">75</button></td>
 			  </tr>
 			</tbody>
 		  </table>
-          </div>
+          </div> 
         </div>
-      </div>
 	  
 	  
     </section>
@@ -172,8 +184,10 @@
     clicked = true;
     $(document).ready(function(){
      $("button").click(function(){
-    var color = clicked ? '#d6676a' : '#fff';
+    var color = clicked ? '#ff1a1a' : '#fff';
     $(this).css('background-color', color);
+	    var fcolor = clicked ? '#fff' : 'gray';
+    $(this).css('color', fcolor);
     clicked = !clicked;
 		});
     });
