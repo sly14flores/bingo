@@ -29,14 +29,14 @@
 	table {
 		border-collapse: collapse;
 		height: 550px;
-		
+		width: 1000px;
+		margin-left: 8px;
+		margin-top:10px;
 	}
-
 	table,  td, thead {
 		border: 1px solid #b1a6a6;
-		font-size:40px;
-	}
-	th{
+		font-size:55px;
+	}-
 	border: 3px solid green;
 	}
 	tr {
@@ -47,11 +47,11 @@
 		border-bottom: 2px solid #171717;
 	}
 	.table td, .table th {
-		padding: .75rem;
+		padding: 1.5rem;
 		vertical-align: top;
 		border-top: 1px solid #000000;
+		font-weight: bold;
 	}
-	
 </style>
   <body>
     <!-- Navigation -->
@@ -160,8 +160,6 @@
 		  </table>
           </div> 
         </div>
-	  
-	  
     </section>
 
     <!-- Bootstrap core JavaScript -->
@@ -175,9 +173,9 @@
     clicked = true;
     $(document).ready(function(){
      $("td").click(function(){
-    var color = clicked ? '#ff1a1a' : '#fff';
+    var color = clicked ? '#ff1a1a' : '#11ffee00';
     $(this).css('background-color', color);
-	    var fcolor = clicked ? '#fff' : 'gray';
+	    var fcolor = clicked ? '#fff' : 'black';
     $(this).css('color', fcolor);
     clicked = !clicked;
 		});
